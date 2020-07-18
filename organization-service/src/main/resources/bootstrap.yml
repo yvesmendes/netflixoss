@@ -1,0 +1,15 @@
+spring:
+  zipkin:
+    base-url: http://zipkin:9411  
+  application:
+    name: organizationservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: http://configserver:8888
+feign:
+  hystrix:
+    enabled: false

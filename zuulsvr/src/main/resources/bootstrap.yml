@@ -1,0 +1,12 @@
+spring:
+  zipkin:
+    base-url: http://zipkin:9411/
+  application:
+    name: zuulservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: http://configserver:8888

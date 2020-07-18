@@ -1,0 +1,6 @@
+eureka.client.serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
+eureka.client.fetchRegistry: true
+eureka.client.registerWithEureka: true
+eureka.instance.preferIpAddress: true
+logging.level.com.thoughtmechanix: DEBUG
+ribbon.eager-load.enabled: true

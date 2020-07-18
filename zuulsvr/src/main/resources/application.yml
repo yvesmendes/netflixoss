@@ -1,0 +1,25 @@
+server:
+  port: 5555
+  zipkin:
+    base-url: http://zipkin:9411/
+  sleuth:
+    sampler:
+      probability: 1  
+      percentage: 1.0        
+
+  #Setting logging levels
+logging:
+    level:
+      com.netflix: WARN
+      org.springframework.web: WARN
+      com.thoughtmechanix: DEBUG
+zuul:
+  prefix: /api
+  routes:
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
+    authenticationservice: /authentication/**
+  add-proxy-headers: false
+security:
+  jwt:
+    public-key: classpath:public.txt  

@@ -1,0 +1,28 @@
+example.property: "I AM IN THE DEFAULT"
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://database:5432/eagle_eye_local"
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}AQBEePJcpztf7FVw67BiPc4qMb8zoAjPRZ8yhb9NrbKbtRD1KXRIr9v2qwVBrO7ayc2fYQ/F0KHYq3OKao5fnlanrxCNtibFwSqhkCpf3bb5SF3Y5Wm0JI5hnrAa18XR1+RvDAnhUdtOa5w6g1Urn5j8ynShwPNJ//Bqa1DCbzJv96uau8S0EYuU/zeoyxuhOkmOsO5luxzttW/vfpB7MgENl4MKCgRE36zbbauZQ7z0YCl27ywH5GYP9HO1QkEzEfVSDlO3890tdXUq84hEH4adtQFAcROsND0SLuP1ewELc8a0Ar+MkBP25gyG0tS4HJmhsA7AcpyhgwNrkvwzuAxLQxTpTaJnbzrGMBUDEdzTpm4x7VEc6KXzFVmLDWa/Ve0="
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+redis.server: "redis"
+redis.port: "6379"
+redis.host: "host.docker.internal"
+signing.key: "345345fsdfsf5345"
+eureka.client.serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
+eureka.client.fetchRegistry: true
+eureka.client.registerWithEureka: true
+eureka.instance.preferIpAddress: true
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+# feign.hystrix.enabled: false
+ribbon.eager-load.enabled: true
+spring.datasource.initialization-mode: always
+security.oauth2.client.access-token-uri: http://authenticationservice/oauth/token
+security.oauth2.client.user-authorization-uri: http://authenticationservice/oauth/authorize
+logging.level.com.thoughtmechanix: DEBUG
+
+# server.port: 8088

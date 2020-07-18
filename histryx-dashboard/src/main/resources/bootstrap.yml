@@ -1,0 +1,12 @@
+server:
+  port: 5554
+spring:
+  application:
+    name: histryxdashboard
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: http://configserver:8888    

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configserver
+
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: changeme
+    alias: mytestkey
+    secret: changeme
+

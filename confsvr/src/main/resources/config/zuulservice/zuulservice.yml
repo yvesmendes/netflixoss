@@ -1,0 +1,17 @@
+eureka.client.serviceUrl.defaultZone: http://eurekaserver:8761/eureka/
+eureka.client.fetchRegistry: true
+eureka.client.registerWithEureka: true
+eureka.instance.preferIpAddress: true
+# feign.hystrix.enabled: false
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+eureka.instance.leaseRenewalIntervalInSeconds: 10
+zuul.ribbon.eager-load.enabled: true
+security.oauth2.client.access-token-uri: http://authenticationservice/oauth/token
+security.oauth2.client.user-authorization-uri: http://authenticationservice/oauth/authorize
+ribbon.eager-load.enabled: true
+logging.level.com.thoughtmechanix: DEBUG
+hystrix.metrics.enabled: true
+hystrix.enabled: true
+management.endpoint.hystrix.stream.enabled: true
+ribbon.eager-load.clients: authenticationservice, organizationservice, licensingservice, specialroutesservice

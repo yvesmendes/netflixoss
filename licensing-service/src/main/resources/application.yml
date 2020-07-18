@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        inboundOrgChanges:
+          destination: orgChangeTopic
+          content-type: application/json
+          group: licensingGroup
+      kafka:
+          binder:
+            zkNodes: zookeeper:2181
+            brokers: kafkaserver:29092
+            defaultZkPort: 2181
+            defaultBrokerPort: 29092
+# feign:
+#   hystrix:
+#     enabled: true
+security:
+  jwt:
+    public-key: classpath:public.txt
+logging:
+  file:
+    path: .
+    name: ${application.name}.log

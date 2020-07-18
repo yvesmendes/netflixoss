@@ -1,0 +1,12 @@
+spring:
+  zipkin:
+    baseUrl:  zipkin:9411  
+  application:
+    name: specialroutesservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: http://configserver:8888

@@ -1,0 +1,9 @@
+security:
+  jwt:
+    public-key: classpath:public.txt  
+management:
+  endpoints:
+    web.exposure.include: '*'
+turbine:
+  appConfig: licensingservice
+  clusterNameExpression: new String('default')
