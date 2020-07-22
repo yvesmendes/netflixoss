@@ -9,6 +9,7 @@ This code is based on the Book's implementation Spring MicroServices in Action (
 - maven
 - JDK 1.8
 - Docker 
+-- Please guarantee at least 8gb to docker-engine run all of images in docker-compose file
 
 # Run
 
