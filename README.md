@@ -5,6 +5,11 @@ This code is based on the Book's implementation Spring MicroServices in Action (
 
 ![Architecture](https://github.com/yvesmendes/netflixoss/blob/master/resource/architecture.png?raw=true)
 
+## Pre-Requisities ##
+- maven
+- JDK 1.8
+- Docker 
+
 # Run
 
 Just run: 
